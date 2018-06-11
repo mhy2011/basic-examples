@@ -1,2 +1,3 @@
 rootProject.name = 'basic-examples'
+include 'design-pattern-examples'
 

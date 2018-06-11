@@ -1,18 +1,20 @@
 group 'com.mhy.basic'
 version '1.0-SNAPSHOT'
 
-apply plugin: 'java'
+allprojects {
+    buildDir = 'target'
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+    apply plugin: 'java'
+    apply plugin: 'idea'
 
-repositories {
-    mavenLocal()
-    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
-    mavenCentral()
-}
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
 
-dependencies {
+    repositories {
+        mavenLocal()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        mavenCentral()
+    }
 
 }
 

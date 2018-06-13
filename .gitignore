@@ -1,2 +1,5 @@
 .gradle/
 *.hprof
+*.index
+*.threads
+*.zip
